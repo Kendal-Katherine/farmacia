@@ -6,7 +6,7 @@ interface CardProdutoProps {
 
 const CardProduto: React.FC<CardProdutoProps> = ({ imgUrl, nomeProduto, descricao }) => {
     return (
-        <div className="conteiner border flex flex-col rounded-2xl overflow-hidden justify-between">
+        <div className="conteiner flex flex-col rounded-2xl overflow-hidden justify-between border-2 border-blue-400">
             <div className="bg-white p-4 rounded-lg shadow-md">
                 <img src={imgUrl} alt={nomeProduto} className="w-full h-32 object-cover mb-4" />
                 <h2 className="text-lg font-semibold mb-2">{nomeProduto}</h2>
@@ -27,7 +27,7 @@ function Home() {
                 <div className=" flex flex-col">
 
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 p-[50px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 p-[50px] ">
                         
                         <CardProduto
                             imgUrl={"https://cdn.ultrafarma.com.br/static/produtos/804460/medium-637505687932037880-804460_2.png"}
